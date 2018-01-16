@@ -1,0 +1,13 @@
+<%= form.fields_for :comment do |comment_form| %>
+  <p>
+    <%= comment_form.label :commenter %><br>
+    <%= comment_form.text_field :commenter %>
+  </p>
+  <p>
+    <%= comment_form.label :body %><br>
+    <%= comment_form.text_area :body %>
+  </p>
+  <p>
+    <%= comment_form.submit %>
+  </p>
+<% end %>
